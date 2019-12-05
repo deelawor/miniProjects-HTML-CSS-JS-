@@ -1,0 +1,37 @@
+
+/*css of flexContainer which will be used to move button at the center of the webPage*/
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*css for grid containing the button and text*/
+.site{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas: "Txt"
+                          "bttn";
+}
+
+/*css for bttn*/
+#bttn{
+    padding: 10px;
+    border: 3px solid blue;
+    border-radius: 35px;
+    background-color: rgba(19, 156, 133, 0.651);
+    cursor: pointer;
+    outline: none;
+    text-transform: capitalize;
+}
+#bttn:hover{
+    background-color: rgba(65, 228, 160, 0.973);
+}
+
+#bttn{grid-template-areas: bttn;}
+
+/*css Txt*/
+#Txt{grid-template-areas: Txt;}
+
